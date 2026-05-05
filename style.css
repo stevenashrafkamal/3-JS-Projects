@@ -1,5 +1,6 @@
 :root {
-    --bg-main: #0b1120;
+    --bg-card: rgba(30, 41, 59, 0.8);
+    --bg-box: rgba(15, 23, 42, 0.7);
     --text-main: #f8fafc;
     --text-muted: #cbd5e1;
     --accent-blue: #3b82f6;
@@ -20,7 +21,7 @@ body {
     color: var(--text-main);
     margin: 0;
     overflow-x: hidden;
-    background-color: var(--bg-main);
+    background-color: #0b1120; 
 }
 
 .page-section {
@@ -62,6 +63,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .main-title {
@@ -70,6 +72,8 @@ body {
     color: var(--text-main);
     text-shadow: 0 4px 20px rgba(0,0,0,0.8);
     letter-spacing: 2px;
+    text-align: center;
+    padding: 0 15px;
 }
 
 .cards-wrapper {
@@ -77,6 +81,7 @@ body {
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .home-card {
@@ -282,14 +287,6 @@ body {
     width: 100%;
 }
 
-@media (max-width: 900px) {
-    .color-container { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 500px) {
-    .color-container { grid-template-columns: 1fr; }
-}
-
 .color-box {
     height: 200px;
     border-radius: 16px;
@@ -381,4 +378,82 @@ body {
 .close-btn:hover {
     color: var(--accent-danger);
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .app-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .app-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .cards-wrapper {
+        gap: 20px;
+    }
+
+    .home-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 40px 20px;
+    }
+
+    .app-container {
+        padding: 30px 15px;
+    }
+
+    .box {
+        padding: 25px 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-large {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .btn-large {
+        margin-bottom: 30px;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .task-actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .color-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .color-box {
+        height: 120px;
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+        width: 90%;
+    }
 }
