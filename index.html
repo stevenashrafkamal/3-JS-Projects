@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projects Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home" class="page-section active">
+        <div class="home-container">
+            <h1 class="main-title">Select a Mini-Project</h1>
+            <div class="cards-wrapper">
+                <div class="home-card card-todo" onclick="navigate('todo')">
+                    <div class="card-icon">📝</div>
+                    <h3>To-Do List</h3>
+                </div>
+                <div class="home-card card-colors" onclick="navigate('colors')">
+                    <div class="card-icon">🎨</div>
+                    <h3>Color Palette</h3>
+                </div>
+                <div class="home-card card-modal" onclick="navigate('modal')">
+                    <div class="card-icon">🪟</div>
+                    <h3>Modal Popup</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="todo" class="page-section">
+        <div class="app-container">
+            <div class="app-header">
+                <h2>📝 To-Do List App</h2>
+                <button class="back-btn" onclick="navigate('home')">← Back</button>
+            </div>
+            <div class="app-content">
+                <div class="box">
+                    <div class="input-group">
+                        <input type="text" id="taskInput" placeholder="Enter a new task...">
+                        <button class="btn-primary" onclick="addTask()">Add</button>
+                    </div>
+                    <div id="taskList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colors" class="page-section">
+        <div class="app-container app-container-wide">
+            <div class="app-header">
+                <h2>🎨 Color Palette Generator</h2>
+                <button class="back-btn" onclick="navigate('home')">← Back</button>
+            </div>
+            <div class="app-content text-center">
+                <div class="box box-transparent">
+                    <button class="btn-primary btn-large" onclick="generatePaletteCode()">Generate Random Colors</button>
+                    <div class="color-container" id="palette"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal" class="page-section">
+        <div class="app-container">
+            <div class="app-header">
+                <h2>🪟 Modal</h2>
+                <button class="back-btn" onclick="navigate('home')">← Back</button>
+            </div>
+            <div class="app-content text-center">
+                <div class="box">
+                    <button class="btn-primary btn-large" onclick="openModal()">Open Modal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="myModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2>Success</h2>
+            <p>The modal appeared successfully.</p>
+            <div style="margin-top: 25px;">
+                <button class="btn-primary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
