@@ -5,6 +5,9 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
+👉 **[Click here to view the Live Demo](https://stevenashrafkamal.github.io/3-JS-Projects/)**
+
+
 ## 📌 About The Project
 
 This repository contains my college project, which I have successfully designed, developed, and fully completed from scratch. 
