@@ -1,6 +1,6 @@
 # 🚀 Mini-Projects Dashboard
 
-![mini apps Banner](mini apps ui .webp)
+![mini apps Banner](mini-apps-ui.webp)
 
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
