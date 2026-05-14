@@ -66,6 +66,6 @@ If you want to explore the code or run it on your machine, no installation or bu
 3. Simply open index.html in any modern web browser.
 
 ## 👤 Author:
-Steven Ashraf Kamal,Ahmed Hamdy,George Ezzat
+Steven Ashraf Kamal
 
-Computer Science Students, Minya University
+Computer Science Student, Minya University
